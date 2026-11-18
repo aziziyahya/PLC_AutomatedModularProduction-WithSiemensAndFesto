@@ -310,6 +310,8 @@ PLC_AutomatedModularProduction WithSiemensAndFesto/
 │       └── ladder_fb_sorting_full.png
 ├── docs/                                   # Academic & technical documentation
 │   └── 241503239 - Project Report (tia-pro1).pdf   # Complete 43-page formal engineering report
+├── factoryio/                              # Factory I/O 3D digital twin simulation scene
+│   └── 241503239_TIAPRO1.factoryio         # Full virtual sorting plant scene with configured sensors & actuators
 ├── plc/                                    # Siemens TIA Portal project archives
 │   ├── 241503239_TIAPRO1.zap21             # Compressed TIA Portal project archive
 │   └── 241503239_TIAPRO1.ap21              # Primary project definition file
@@ -339,7 +341,7 @@ PLC_AutomatedModularProduction WithSiemensAndFesto/
    - Select `HMI_1 [KTP700 Basic PN]` in the project tree.
    - Click **Start Simulation** to open the virtual touch panel runtime on your desktop.
 4. **Connect Factory I/O 3D Simulation:**
-   - Open Factory I/O and load the sorting scene.
+   - Open `factoryio/241503239_TIAPRO1.factoryio` directly in Factory I/O (or place it in your `Documents/Factory IO/My Scenes` directory and open it from the Scenes browser).
    - Go to `File` → `Drivers`. Select **Siemens S7-PLCSIM**.
    - Under `Configuration`, select **S7-1500** as the model.
    - Click **Connect**. A green checkmark will appear next to the driver status indicating cyclic communication.
