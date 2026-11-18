@@ -59,6 +59,13 @@ The automation network is structured over industrial **PROFINET (PN/IE)**, provi
 
 ## 🔄 Automated Process Sequence & Sorting Logic
 
+<div align="center">
+
+<details>
+<summary align="center"><b>🔄 Click to expand Automated Process Flowchart</b></summary>
+
+<br/>
+
 ```mermaid
 flowchart TD
     Start([System Start: Auto Mode]) --> Emitter[Emitter Releases Raw Workpiece]
@@ -88,6 +95,10 @@ flowchart TD
     SetPointCheck -->|No| Emitter
     SetPointCheck -->|Yes| Halt[Display 'Actual Set Point Reached!'\nAuto-Halt Main Line]
 ```
+
+</details>
+
+</div>
 
 ### Operational Modes
 1. **Auto Mode (`FC_Mode` / `FC_Conveyor`):**
@@ -185,6 +196,13 @@ The TIA Portal project is structured using modular industrial programming standa
 
 A key technical highlight of this automation architecture is its **multi-layered closed-loop fault monitoring matrix**. Rather than assuming hardware operations succeed, the program actively verifies physical behavior against deterministic software timers:
 
+<div align="center">
+
+<details>
+<summary align="center"><b>🚨 Click to expand Safety & Fault Latched State Diagram</b></summary>
+
+<br/>
+
 ```mermaid
 stateDiagram-v2
     [*] --> Standby : Power On & E-Stop Healthy
@@ -208,6 +226,10 @@ stateDiagram-v2
     FaultLatched --> FaultAcknowledged : Acknowledge Button Pressed (HMI / Physical)
     FaultAcknowledged --> Standby : Physical Cause Cleared & Reset Button Pressed
 ```
+
+</details>
+
+</div>
 
 ### Monitored Industrial Fault Categories
 
