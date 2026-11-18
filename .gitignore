@@ -1,0 +1,12 @@
+# TIA Portal temporary and lock files
+*.lock
+*.tmp
+*.bak
+PEData.plf
+~*
+
+# Editor & OS files
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

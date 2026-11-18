@@ -1,0 +1,9 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Treat archives, documents, and images as binary
+*.zap21 binary
+*.ap21 binary
+*.pdf binary
+*.png binary
+*.jpg binary
